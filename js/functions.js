@@ -1,44 +1,44 @@
-// 'prompt()' is for user input, has a text field for the user to enter some text.
-/*
-var name;
+//alert('This is an alert.');
 
-while (!name) {		//'!name' means 'not name', i.e., no name has been entered
-	name = prompt('What is your name?');
+var letter;
+
+while (!letter) {
+	letter = prompt('Please type a letter into the field');
 }
 
 // 'console.log()' writes out the content of a variable for debugging
 //identical to Actionscript's 'trace()'
-console.log(name);
+console.log(letter);
 
-document.write('Hello, ' + name);
+document.write(letter);
 
 
-for (var i = 0; i < 5; i++) {
-//	document.write('<br>' + i);
-	document.write('<h1>' + i + '</h1>');
+for (var i = 0; i < 10; i++) {
+	document.write(letter);
 }
-*/
 
 
-function letter () {
-	var letter = prompt('Please type a letter into the field at right');
+
+
+function isNameCool () {
+	var name = prompt('What is your name?');
 	
-	if (letter == 'a, b, c') {
-		document.write(letter);
+	if (name == 'Deanna') {
+		document.write("That's an awesome name!");
 	} else {
-		document.write("Please type a letter into the field.");
+		document.write("I don't like your name.");
 	}
 }
 
 isNameCool();		//calling the function
 
-var writeLetterMultipleTimes = function () {
-	for (var i = 0; i < 10; i++ ) {
-	document.write('<br>letter');
+var writeNameMultipleTimes = function () {
+	for (var i = 0; i < 5; i++ ) {
+	document.write(letter);
 	}
-};
+};		//add a semicolon at the end because this is a definition of a variable.
 
-writeLetterMultipleTimes();
+writeNameMultipleTimes();		//calling the variable, which includes a function.
 
 
 
